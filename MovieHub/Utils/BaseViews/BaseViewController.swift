@@ -10,16 +10,20 @@ import UIKit
 
 class BaseViewController:UIViewController {
     
+    public let activitIndicator = UIActivityIndicatorView(style: .large)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         observers()
+        initIndicator()
     }
     
     /// called when device connected/disconnected to internet or its reachable
     func networkReachable(status:Bool) {
         
     }
+    
+
 }
 
 
@@ -33,6 +37,11 @@ extension BaseViewController {
                                  object: nil)
     }
     
+    func initIndicator() {
+        activitIndicator.color = .white
+        view.subviews(activitIndicator)
+        activitIndicator.fillContainer()
+    }
 }
 
 extension BaseViewController {

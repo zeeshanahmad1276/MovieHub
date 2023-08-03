@@ -15,7 +15,6 @@
 		18011CAB2A7ADEA400DB4FCB /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CAA2A7ADEA400DB4FCB /* UIColor+.swift */; };
 		18011CAD2A7ADEA900DB4FCB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CAC2A7ADEA900DB4FCB /* UIView+.swift */; };
 		18011CAF2A7ADEB100DB4FCB /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CAE2A7ADEB100DB4FCB /* UIViewController+.swift */; };
-		18011CB12A7ADEBA00DB4FCB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CB02A7ADEBA00DB4FCB /* String+.swift */; };
 		18011CB32A7ADEC000DB4FCB /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CB22A7ADEC000DB4FCB /* Date+.swift */; };
 		18011CBD2A7ADF3500DB4FCB /* MoviesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CBC2A7ADF3500DB4FCB /* MoviesListController.swift */; };
 		18011CC02A7AE02D00DB4FCB /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CBF2A7AE02D00DB4FCB /* UICollectionView+.swift */; };
@@ -45,6 +44,10 @@
 		18011D7A2A7B8EE900DB4FCB /* FixelText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D722A7B8EE900DB4FCB /* FixelText-Light.ttf */; };
 		18011D7C2A7B975500DB4FCB /* MovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D7B2A7B975500DB4FCB /* MovieDetailController.swift */; };
 		18011D7F2A7B992700DB4FCB /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D7E2A7B992700DB4FCB /* MovieDetailView.swift */; };
+		18011D812A7BAECA00DB4FCB /* MovieDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D802A7BAECA00DB4FCB /* MovieDetailCell.swift */; };
+		18011D852A7C320100DB4FCB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D842A7C320100DB4FCB /* String+.swift */; };
+		18011D872A7C377400DB4FCB /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D862A7C377400DB4FCB /* RatingStarView.swift */; };
+		18011D892A7C3C3200DB4FCB /* MovieStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D882A7C3C3200DB4FCB /* MovieStatusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +61,6 @@
 		18011CAA2A7ADEA400DB4FCB /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		18011CAC2A7ADEA900DB4FCB /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		18011CAE2A7ADEB100DB4FCB /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		18011CB02A7ADEBA00DB4FCB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		18011CB22A7ADEC000DB4FCB /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		18011CBC2A7ADF3500DB4FCB /* MoviesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListController.swift; sourceTree = "<group>"; };
 		18011CBF2A7AE02D00DB4FCB /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
@@ -88,6 +90,10 @@
 		18011D722A7B8EE900DB4FCB /* FixelText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Light.ttf"; sourceTree = "<group>"; };
 		18011D7B2A7B975500DB4FCB /* MovieDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailController.swift; sourceTree = "<group>"; };
 		18011D7E2A7B992700DB4FCB /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		18011D802A7BAECA00DB4FCB /* MovieDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCell.swift; sourceTree = "<group>"; };
+		18011D842A7C320100DB4FCB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		18011D862A7C377400DB4FCB /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
+		18011D882A7C3C3200DB4FCB /* MovieStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStatusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +154,8 @@
 				18011CAC2A7ADEA900DB4FCB /* UIView+.swift */,
 				18011D672A7B8C0500DB4FCB /* UIImage+.swift */,
 				18011CAE2A7ADEB100DB4FCB /* UIViewController+.swift */,
-				18011CB02A7ADEBA00DB4FCB /* String+.swift */,
 				18011CB22A7ADEC000DB4FCB /* Date+.swift */,
+				18011D842A7C320100DB4FCB /* String+.swift */,
 				18011CBF2A7AE02D00DB4FCB /* UICollectionView+.swift */,
 				18011CC12A7AE03600DB4FCB /* UITableView+.swift */,
 				18011CCB2A7AE2B000DB4FCB /* NotificationName+.swift */,
@@ -190,6 +196,7 @@
 				18011CC92A7AE20100DB4FCB /* Reachability.swift */,
 				18011D632A7B7E4300DB4FCB /* AppPlaceHolderView.swift */,
 				18011D652A7B8BBE00DB4FCB /* ImageCache.swift */,
+				18011D862A7C377400DB4FCB /* RatingStarView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -270,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				18011D612A7B7D6F00DB4FCB /* MovieCell.swift */,
+				18011D802A7BAECA00DB4FCB /* MovieDetailCell.swift */,
+				18011D882A7C3C3200DB4FCB /* MovieStatusCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -368,6 +377,7 @@
 				18011CAB2A7ADEA400DB4FCB /* UIColor+.swift in Sources */,
 				18011CAF2A7ADEB100DB4FCB /* UIViewController+.swift in Sources */,
 				18011D682A7B8C0500DB4FCB /* UIImage+.swift in Sources */,
+				18011D872A7C377400DB4FCB /* RatingStarView.swift in Sources */,
 				18011CD42A7AE74700DB4FCB /* TMDBKeys.swift in Sources */,
 				18011D6A2A7B8E7F00DB4FCB /* BaseNavigationController.swift in Sources */,
 				18011CA92A7ADE9E00DB4FCB /* UIFont+.swift in Sources */,
@@ -376,13 +386,15 @@
 				18011CC22A7AE03600DB4FCB /* UITableView+.swift in Sources */,
 				18011CC02A7AE02D00DB4FCB /* UICollectionView+.swift in Sources */,
 				18011CCA2A7AE20100DB4FCB /* Reachability.swift in Sources */,
+				18011D892A7C3C3200DB4FCB /* MovieStatusCell.swift in Sources */,
 				18011CCE2A7AE3A700DB4FCB /* EndPoints.swift in Sources */,
 				18011D662A7B8BBE00DB4FCB /* ImageCache.swift in Sources */,
 				18011CBD2A7ADF3500DB4FCB /* MoviesListController.swift in Sources */,
 				18011C932A7AD66D00DB4FCB /* SceneDelegate.swift in Sources */,
 				18011D642A7B7E4300DB4FCB /* AppPlaceHolderView.swift in Sources */,
-				18011CB12A7ADEBA00DB4FCB /* String+.swift in Sources */,
+				18011D812A7BAECA00DB4FCB /* MovieDetailCell.swift in Sources */,
 				18011CC62A7AE1B000DB4FCB /* BaseCollectionCell.swift in Sources */,
+				18011D852A7C320100DB4FCB /* String+.swift in Sources */,
 				18011CD22A7AE43500DB4FCB /* NetworkService.swift in Sources */,
 				18011CAD2A7ADEA900DB4FCB /* UIView+.swift in Sources */,
 				18011CDA2A7AF08900DB4FCB /* BaseView.swift in Sources */,

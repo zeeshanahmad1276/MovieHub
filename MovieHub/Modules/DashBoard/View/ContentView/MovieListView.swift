@@ -22,14 +22,6 @@ class MovieListView:BaseView {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero,
                                   collectionViewLayout: layout)
-        cv.registerCell(ofType: MovieCell.self)
-        cv.register(ActivityFooterView.self,
-                    forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-                    withReuseIdentifier: ActivityFooterView.identifier)
-        cv.dataSource = self
-        cv.delegate = self
-        cv.contentInset = .init(top: 16, left: 16, bottom: 60, right: 16)
-        cv.backgroundColor = .clear
         return cv
     }()
     
@@ -39,6 +31,7 @@ class MovieListView:BaseView {
         super.setupViews()
         subviews(collectionView)
         collectionView.fillContainer()
+        iniCollectionView()
     }
     
     func appendMovies(movies:[Movie]) {
@@ -55,7 +48,6 @@ class MovieListView:BaseView {
                 self.collectionView.insertItems(at: indexPaths)
             }, completion: nil)
         }
-        
     }
     
 }
@@ -99,6 +91,7 @@ extension MovieListView: UICollectionViewDataSource,
     }
     
 }
+
 extension MovieListView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -115,3 +108,17 @@ extension MovieListView: UICollectionViewDelegateFlowLayout {
     }
 }
 
+
+extension MovieListView {
+    
+    func iniCollectionView() {
+        collectionView.registerCell(ofType: MovieCell.self)
+        collectionView.register(ActivityFooterView.self,
+                    forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+                    withReuseIdentifier: ActivityFooterView.identifier)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.contentInset = .init(top: 16, left: 16, bottom: 60, right: 16)
+        collectionView.backgroundColor = .clear
+    }
+}

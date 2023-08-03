@@ -10,14 +10,14 @@ import Foundation
 enum Endpoint {
     
     case popularMovies(page: Int)
-    case topRatedMovies
+    case movieDetail(id: Int)
 
     var path: String {
         switch self {
         case .popularMovies(let page):
             return "/movie/popular?language=en-US&page=\(page)"
-        case .topRatedMovies:
-            return "/movie/top_rated"
+        case .movieDetail(let id):
+            return "/movie/\(id)?language=en-US"
         }
     }
 }

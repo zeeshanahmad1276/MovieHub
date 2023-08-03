@@ -76,23 +76,23 @@ extension UIView {
     
     // Function to fill the view vertically to its superview
     @discardableResult
-    func fillVertically(_ insets: UIEdgeInsets = .zero) -> Self {
+    func fillVertically(padding: CGFloat = 0) -> Self {
         guard let _ = superview else {
             return self
         }
-        top(insets.top)
-        bottom(insets.bottom)
+        top(padding)
+        bottom(padding)
         return self
     }
     
     // Function to fill the view horizontally to its superview
     @discardableResult
-    func fillHorizontally(_ insets: UIEdgeInsets = .zero) -> Self {
+    func fillHorizontally(padding:CGFloat = 0) -> Self {
         guard let superview = superview else {
             return self
         }
-        leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: insets.left).isActive = true
-        trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -insets.right).isActive = true
+        leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: padding).isActive = true
+        trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -padding).isActive = true
         return self
     }
     
@@ -166,5 +166,44 @@ extension UIView {
         layer.borderWidth = 1.0
         layer.borderColor = UIColor.white.cgColor
         clipsToBounds = true
+    }
+    
+    func loadImageFromCacheOrAPI(posterPath:String,url:URL,placeHolder:String,completion: @escaping (UIImage) -> ()) {
+        if let cachedImage = ImageCache.shared.image(forKey: posterPath) {
+            // Image is cached, use it
+            completion(cachedImage)
+        } else {
+            // Image not in cache, check if it exists in app directory
+            if let localImage = loadImageFromDocumentsDirectory(withName: posterPath) {
+                // Image exists in app directory, use it and cache it
+              
+                ImageCache.shared.setImage(localImage, forKey: posterPath)
+                completion(localImage)
+            } else {
+                // Image not in app directory, download it from the API
+                downloadImageFromAPI(posterPath: posterPath, posterURL: url,placeHolder: placeHolder,completion: completion)
+            }
+        }
+    }
+    
+    func downloadImageFromAPI(posterPath:String,posterURL:URL,placeHolder:String,completion: @escaping (UIImage) -> ()) {
+        let image = UIImage(named: placeHolder) ?? UIImage()
+        let task = URLSession.shared.dataTask(with: posterURL) { data, response, error in
+            if let error = error {
+                completion(image)
+                print("Error fetching movie poster: \(error.localizedDescription)")
+                return
+            }
+            if let data = data, let posterImage = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    ImageCache.shared.setImage(posterImage, forKey: posterPath)
+                    posterImage.saveImageToDocumentsDirectory(withName: posterPath)
+                    completion(posterImage)
+                }
+            } else {
+                completion(image)
+            }
+        }
+        task.resume()
     }
 }
