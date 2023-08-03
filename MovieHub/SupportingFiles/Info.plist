@@ -19,5 +19,14 @@
 			</array>
 		</dict>
 	</dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>FixelText-Medium.ttf</string>
+        <string>FixelText-SemiBold.ttf</string>
+        <string>FixelText-Regular.ttf</string>
+        <string>FixelText-Light.ttf</string>
+        <string>FixelText-Bold.ttf</string>
+        <string>FixelText-Black.ttf</string>
+    </array>
 </dict>
 </plist>

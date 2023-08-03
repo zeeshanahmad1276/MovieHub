@@ -141,3 +141,30 @@ extension UIView {
         return constraints.first { $0.firstItem as? UIView == self && $0.firstAttribute == .bottom }
     }
 }
+
+extension UIView {
+    
+    func loadImageFromDocumentsDirectory(withName name: String) -> UIImage? {
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let fileURL = documentsURL.appendingPathComponent(name)
+        
+        do {
+            let imageData = try Data(contentsOf: fileURL)
+            return UIImage(data: imageData)
+        } catch {
+            print("Error loading image from documents directory: \(error.localizedDescription)")
+            return nil
+        }
+    }
+    
+    func setupShadow() {
+        layer.cornerRadius = 8
+        layer.shadowColor = UIColor.lightGray.cgColor
+        layer.shadowOpacity = 0.2
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 2
+        layer.borderWidth = 1.0
+        layer.borderColor = UIColor.white.cgColor
+        clipsToBounds = true
+    }
+}

@@ -15,6 +15,11 @@ class BaseViewController:UIViewController {
         super.viewDidLoad()
         observers()
     }
+    
+    /// called when device connected/disconnected to internet or its reachable
+    func networkReachable(status:Bool) {
+        
+    }
 }
 
 
@@ -56,10 +61,7 @@ extension BaseViewController {
     }
     
     
-    /// called when device connected/disconnected to internet or its reachable
-    func networkReachable(status:Bool) {
-        
-    }
+    
     
     
 }

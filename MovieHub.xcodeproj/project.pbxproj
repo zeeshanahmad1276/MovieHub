@@ -32,6 +32,19 @@
 		18011CD62A7AE7FB00DB4FCB /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CD52A7AE7FB00DB4FCB /* MovieListModel.swift */; };
 		18011CD82A7AF07600DB4FCB /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CD72A7AF07600DB4FCB /* MovieListView.swift */; };
 		18011CDA2A7AF08900DB4FCB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011CD92A7AF08900DB4FCB /* BaseView.swift */; };
+		18011D622A7B7D6F00DB4FCB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D612A7B7D6F00DB4FCB /* MovieCell.swift */; };
+		18011D642A7B7E4300DB4FCB /* AppPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D632A7B7E4300DB4FCB /* AppPlaceHolderView.swift */; };
+		18011D662A7B8BBE00DB4FCB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D652A7B8BBE00DB4FCB /* ImageCache.swift */; };
+		18011D682A7B8C0500DB4FCB /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D672A7B8C0500DB4FCB /* UIImage+.swift */; };
+		18011D6A2A7B8E7F00DB4FCB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D692A7B8E7F00DB4FCB /* BaseNavigationController.swift */; };
+		18011D732A7B8EE900DB4FCB /* FixelText-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D6B2A7B8EE800DB4FCB /* FixelText-Black.ttf */; };
+		18011D742A7B8EE900DB4FCB /* FixelText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D6C2A7B8EE900DB4FCB /* FixelText-Regular.ttf */; };
+		18011D762A7B8EE900DB4FCB /* FixelText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D6E2A7B8EE900DB4FCB /* FixelText-Bold.ttf */; };
+		18011D782A7B8EE900DB4FCB /* FixelText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D702A7B8EE900DB4FCB /* FixelText-SemiBold.ttf */; };
+		18011D792A7B8EE900DB4FCB /* FixelText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D712A7B8EE900DB4FCB /* FixelText-Medium.ttf */; };
+		18011D7A2A7B8EE900DB4FCB /* FixelText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18011D722A7B8EE900DB4FCB /* FixelText-Light.ttf */; };
+		18011D7C2A7B975500DB4FCB /* MovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D7B2A7B975500DB4FCB /* MovieDetailController.swift */; };
+		18011D7F2A7B992700DB4FCB /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011D7E2A7B992700DB4FCB /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +75,19 @@
 		18011CD52A7AE7FB00DB4FCB /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
 		18011CD72A7AF07600DB4FCB /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		18011CD92A7AF08900DB4FCB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		18011D612A7B7D6F00DB4FCB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		18011D632A7B7E4300DB4FCB /* AppPlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPlaceHolderView.swift; sourceTree = "<group>"; };
+		18011D652A7B8BBE00DB4FCB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		18011D672A7B8C0500DB4FCB /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		18011D692A7B8E7F00DB4FCB /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		18011D6B2A7B8EE800DB4FCB /* FixelText-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Black.ttf"; sourceTree = "<group>"; };
+		18011D6C2A7B8EE900DB4FCB /* FixelText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Regular.ttf"; sourceTree = "<group>"; };
+		18011D6E2A7B8EE900DB4FCB /* FixelText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Bold.ttf"; sourceTree = "<group>"; };
+		18011D702A7B8EE900DB4FCB /* FixelText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-SemiBold.ttf"; sourceTree = "<group>"; };
+		18011D712A7B8EE900DB4FCB /* FixelText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Medium.ttf"; sourceTree = "<group>"; };
+		18011D722A7B8EE900DB4FCB /* FixelText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FixelText-Light.ttf"; sourceTree = "<group>"; };
+		18011D7B2A7B975500DB4FCB /* MovieDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailController.swift; sourceTree = "<group>"; };
+		18011D7E2A7B992700DB4FCB /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +146,7 @@
 				18011CA82A7ADE9E00DB4FCB /* UIFont+.swift */,
 				18011CAA2A7ADEA400DB4FCB /* UIColor+.swift */,
 				18011CAC2A7ADEA900DB4FCB /* UIView+.swift */,
+				18011D672A7B8C0500DB4FCB /* UIImage+.swift */,
 				18011CAE2A7ADEB100DB4FCB /* UIViewController+.swift */,
 				18011CB02A7ADEBA00DB4FCB /* String+.swift */,
 				18011CB22A7ADEC000DB4FCB /* Date+.swift */,
@@ -161,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				18011CC92A7AE20100DB4FCB /* Reachability.swift */,
+				18011D632A7B7E4300DB4FCB /* AppPlaceHolderView.swift */,
+				18011D652A7B8BBE00DB4FCB /* ImageCache.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -172,6 +201,7 @@
 				18011CC52A7AE1B000DB4FCB /* BaseCollectionCell.swift */,
 				18011CC72A7AE1DB00DB4FCB /* BaseViewController.swift */,
 				18011CD92A7AF08900DB4FCB /* BaseView.swift */,
+				18011D692A7B8E7F00DB4FCB /* BaseNavigationController.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -179,6 +209,12 @@
 		18011CB72A7ADEEB00DB4FCB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				18011D6B2A7B8EE800DB4FCB /* FixelText-Black.ttf */,
+				18011D6E2A7B8EE900DB4FCB /* FixelText-Bold.ttf */,
+				18011D722A7B8EE900DB4FCB /* FixelText-Light.ttf */,
+				18011D712A7B8EE900DB4FCB /* FixelText-Medium.ttf */,
+				18011D6C2A7B8EE900DB4FCB /* FixelText-Regular.ttf */,
+				18011D702A7B8EE900DB4FCB /* FixelText-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -204,7 +240,8 @@
 		18011CBA2A7ADF1D00DB4FCB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18011CD72A7AF07600DB4FCB /* MovieListView.swift */,
+				18011D7D2A7B991500DB4FCB /* ContentView */,
+				18011D602A7B7D5E00DB4FCB /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				18011CBC2A7ADF3500DB4FCB /* MoviesListController.swift */,
+				18011D7B2A7B975500DB4FCB /* MovieDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +264,23 @@
 				18011CD12A7AE43500DB4FCB /* NetworkService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		18011D602A7B7D5E00DB4FCB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18011D612A7B7D6F00DB4FCB /* MovieCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18011D7D2A7B991500DB4FCB /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				18011CD72A7AF07600DB4FCB /* MovieListView.swift */,
+				18011D7E2A7B992700DB4FCB /* MovieDetailView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18011D762A7B8EE900DB4FCB /* FixelText-Bold.ttf in Resources */,
 				18011C9D2A7AD66F00DB4FCB /* LaunchScreen.storyboard in Resources */,
+				18011D782A7B8EE900DB4FCB /* FixelText-SemiBold.ttf in Resources */,
+				18011D792A7B8EE900DB4FCB /* FixelText-Medium.ttf in Resources */,
+				18011D742A7B8EE900DB4FCB /* FixelText-Regular.ttf in Resources */,
 				18011C9A2A7AD66F00DB4FCB /* Assets.xcassets in Resources */,
+				18011D7A2A7B8EE900DB4FCB /* FixelText-Light.ttf in Resources */,
+				18011D732A7B8EE900DB4FCB /* FixelText-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,12 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18011D7F2A7B992700DB4FCB /* MovieDetailView.swift in Sources */,
 				18011C912A7AD66D00DB4FCB /* AppDelegate.swift in Sources */,
+				18011D7C2A7B975500DB4FCB /* MovieDetailController.swift in Sources */,
 				18011CD82A7AF07600DB4FCB /* MovieListView.swift in Sources */,
+				18011D622A7B7D6F00DB4FCB /* MovieCell.swift in Sources */,
 				18011CC42A7AE1A900DB4FCB /* BaseTableCell.swift in Sources */,
 				18011CAB2A7ADEA400DB4FCB /* UIColor+.swift in Sources */,
 				18011CAF2A7ADEB100DB4FCB /* UIViewController+.swift in Sources */,
+				18011D682A7B8C0500DB4FCB /* UIImage+.swift in Sources */,
 				18011CD42A7AE74700DB4FCB /* TMDBKeys.swift in Sources */,
+				18011D6A2A7B8E7F00DB4FCB /* BaseNavigationController.swift in Sources */,
 				18011CA92A7ADE9E00DB4FCB /* UIFont+.swift in Sources */,
 				18011CCC2A7AE2B000DB4FCB /* NotificationName+.swift in Sources */,
 				18011CC82A7AE1DB00DB4FCB /* BaseViewController.swift in Sources */,
@@ -311,8 +377,10 @@
 				18011CC02A7AE02D00DB4FCB /* UICollectionView+.swift in Sources */,
 				18011CCA2A7AE20100DB4FCB /* Reachability.swift in Sources */,
 				18011CCE2A7AE3A700DB4FCB /* EndPoints.swift in Sources */,
+				18011D662A7B8BBE00DB4FCB /* ImageCache.swift in Sources */,
 				18011CBD2A7ADF3500DB4FCB /* MoviesListController.swift in Sources */,
 				18011C932A7AD66D00DB4FCB /* SceneDelegate.swift in Sources */,
+				18011D642A7B7E4300DB4FCB /* AppPlaceHolderView.swift in Sources */,
 				18011CB12A7ADEBA00DB4FCB /* String+.swift in Sources */,
 				18011CC62A7AE1B000DB4FCB /* BaseCollectionCell.swift in Sources */,
 				18011CD22A7AE43500DB4FCB /* NetworkService.swift in Sources */,

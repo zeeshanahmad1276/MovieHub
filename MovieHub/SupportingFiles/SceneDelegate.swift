@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         window?.windowScene = scene
-        window?.rootViewController = MoviesListController()
+        window?.rootViewController = BaseNavigationController(rootViewController: MoviesListController())
         window?.makeKeyAndVisible()
     }
 
