@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = scene
         window?.rootViewController = BaseNavigationController(rootViewController: MoviesListController())
         window?.makeKeyAndVisible()
-        print("run")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
