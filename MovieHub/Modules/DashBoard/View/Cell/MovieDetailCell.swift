@@ -59,7 +59,7 @@ class MovieDetailCell:BaseTableCell {
         print(movie)
         let genreName = movie.genres?.compactMap({$0.name}).joined(separator: ", ")
         let date      = movie.year
-        let time     = movie.movieTime()
+        let time     = movie.movieTime()  
         self.label.text = "\(genreName ?? ""). [\(date)] \(time)"
         self.descLabel.text = movie.overview
         self.rateStarView.currentRating = Int(movie.voteAverage ?? 0)

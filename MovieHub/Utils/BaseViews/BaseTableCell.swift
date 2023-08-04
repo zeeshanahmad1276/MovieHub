@@ -21,7 +21,7 @@ class BaseTableCell:UITableViewCell {
     }
     
     func setupViews() {
-        
+        backgroundColor = .appDark
     }
     
 }

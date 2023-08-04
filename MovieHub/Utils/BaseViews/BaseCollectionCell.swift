@@ -21,7 +21,7 @@ class BaseCollectionCell:UICollectionViewCell {
     
     
     func setupViews() {
-        
+        backgroundColor = .appDark
     }
     
 }

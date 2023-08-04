@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct MovieListModel: Codable {
+struct MovieListModel: Codable,Equatable {
+    
     let page: Int
     let movies: [Movie]
     let totalPages, totalResults: Int
@@ -18,6 +19,11 @@ struct MovieListModel: Codable {
         case totalPages = "total_pages"
         case totalResults = "total_results"
     }
+    
+    static func == (lhs: MovieListModel, rhs: MovieListModel) -> Bool {
+        lhs.page == rhs.page
+    }
+    
 }
 
 // MARK: - Movie
@@ -117,12 +123,12 @@ struct Movie : Codable {
     
     var year:String {
        let date = self.releaseDate?.extractDate()
-        return date?.toString() ?? ""
+       return date?.toString() ?? ""
     }
     
     func movieTime() -> String {
         guard let runTime = runtime else {
-            return ""
+            return "Release Date not found."
         }
         let hours = runTime / 60
         let remainingMinutes = runTime % 60

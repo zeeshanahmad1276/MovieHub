@@ -50,7 +50,6 @@ extension MovieDetailController {
 extension MovieDetailController {
     
     func setupViews() {
-        view.backgroundColor = .black
         view.subviews(detailView)
         detailView.fillContainer()
     }

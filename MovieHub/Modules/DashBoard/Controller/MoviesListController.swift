@@ -9,11 +9,11 @@ import UIKit
 
 class MoviesListController:BaseViewController {
     
-    private let networkingService = NetworkingService()
+    public  var networkingService = NetworkingService() // var for unit/ui test
     private let movieListView     = MovieListView()
-    private var movieListModel    : MovieListModel?
+    public  var movieListModel    : MovieListModel?
     private let rightItemLabel    = UILabel()
-    private let placeHolder       = AppPlaceHolderView()
+    public  let placeHolder       = AppPlaceHolderView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,6 @@ class MoviesListController:BaseViewController {
 extension MoviesListController {
     
     func setupViews() {
-        view.backgroundColor = .black
         movieListView.delegate = self
         view.subviews(movieListView,placeHolder)
         movieListView.fillContainer()
@@ -44,14 +43,15 @@ extension MoviesListController {
     
     func setupNavBar() {
         navigationItem.title = "Popular Movies"
+        rightItemLabel.text = "Status"
+        rightItemLabel.textColor = .white
+        rightItemLabel.font = .fixelText(size: 14, weight: .regular)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightItemLabel)
     }
     
     func didChangeConnectivity(online:Bool) {
         rightItemLabel.text = online ? "Online" : "Offline"
         rightItemLabel.textColor = online ? .appBlue : .appRed
-        rightItemLabel.sizeToFit()
-        rightItemLabel.font = .fixelText(size: 14, weight: .regular)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightItemLabel)
     }
     
 }
@@ -64,7 +64,7 @@ extension MoviesListController {
             self.stopAnimating()
             guard let model = movies,error == nil else {
                 DispatchQueue.main.async {
-                    self.placeHolder.isHidden = page == 1 ? false : true
+                    self.placeHolder.isHidden = page == 1 ? false : true // Hide when any page is here
                     self.showAlert(title: "Error", message: error?.localizedDescription, actionTitle: "Ok")
                 }
                 return
